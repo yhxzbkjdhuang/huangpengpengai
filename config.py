@@ -12,15 +12,15 @@ class Config:
     
     # ===== Kimi API 配置 =====
     # 请在 https://platform.moonshot.cn/ 获取您的API密钥
-    KIMI_API_KEY: str = os.getenv('KIMI_API_KEY', 'sk-LbZcEzLgtggX1BbhDUGaEWWshDb9mJ8Xv4iME5BDMWQuLd4q')
+    KIMI_API_KEY: str = os.getenv('KIMI_API_KEY', '')
     KIMI_API_URL: str = 'https://api.moonshot.cn/v1/chat/completions'
     KIMI_MODEL: str = 'moonshot-v1-8k'
     
     # ===== 科大讯飞 TTS 配置 =====
     # 请在 https://console.xfyun.cn/ 获取您的API信息
-    XFYUN_APPID: str = os.getenv('XFYUN_APPID', '55b1ab04')
-    XFYUN_API_KEY: str = os.getenv('XFYUN_API_KEY', 'd1b344ef0dda66a186392f631d20ffa6')
-    XFYUN_API_SECRET: str = os.getenv('XFYUN_API_SECRET', 'YWNlNGVlOTdkMjQ0NmFkNGY2MDA5Mzhl')
+    XFYUN_APPID: str = os.getenv('XFYUN_APPID', '')
+    XFYUN_API_KEY: str = os.getenv('XFYUN_API_KEY', '')
+    XFYUN_API_SECRET: str = os.getenv('XFYUN_API_SECRET', '')
     
     # ===== 应用配置 =====
     SECRET_KEY: str = os.getenv('SECRET_KEY', 'your-secret-key-here')
